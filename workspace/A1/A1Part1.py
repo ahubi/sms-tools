@@ -31,11 +31,4 @@ def readAudio(inputFile):
         The function should return a numpy array that contains 10 samples of the audio.
     """
     f, samples = wavread(inputFile)
-    print(samples[50000:50010])
-
-def main():
-    readAudio('../../sounds/piano.wav')
-
-
-if __name__ == '__main__':
-    main()
+    return samples[50000:50010]
